@@ -9,10 +9,11 @@
 
         var result = Add2(4);
 
-        int number1 = 20;
+        int number1=20;
         int number2 = 100;
 
-        var result2=Add3(ref number1, number2);
+        //out keyword ile number1'e bir değer atamaya gerek yoktur
+        var result2=Add3(out number1, number2);
 
 
         Console.WriteLine(result2);
@@ -32,7 +33,7 @@
         return result;
     }
 
-    static int Add3(ref int number1,int number2)
+    static int Add3(out int number1,int number2)
     {
         number1 = 30;
         return number1 + number2;
