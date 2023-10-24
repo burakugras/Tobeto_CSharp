@@ -5,6 +5,7 @@
         //value types
 
         double number5 = 10.4;//64 bit
+        decimal number6 = 10.4M;
         char character = 'A';//16 bit
         bool condition = false;//1 bit
         byte number4 = 255;//8 bit
