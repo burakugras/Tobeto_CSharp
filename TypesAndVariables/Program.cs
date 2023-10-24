@@ -4,6 +4,7 @@
     {
         //value types
 
+        bool condition = false;
         byte number4 = 255;
         short number3 = 32767;//16 bit
         int number1 = 2147483647;//32 bit
