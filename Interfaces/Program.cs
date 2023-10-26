@@ -1,6 +1,18 @@
-﻿internal class Program
+﻿using Interfaces;
+
+internal class Program
 {
     private static void Main(string[] args)
+    {
+        //InterfacesIntro();
+
+        CustomerManager customerManager = new CustomerManager();
+        customerManager.Add(new OracleCustomerDal());
+
+        Console.ReadLine();
+    }
+
+    private static void InterfacesIntro()
     {
         PersonManager manager = new PersonManager();
         Customer customer = new Customer
@@ -20,8 +32,6 @@
         };
         manager.Add(customer);
         manager.Add(student);
-
-        Console.ReadLine();
     }
 
     interface IPerson
